@@ -16,7 +16,7 @@ services:
         delay: 10s
     networks:
       - app-network
-    command: sh -c "./bin/rails db:migrate && bundle exec puma -C config/puma.rb"
+    #command: sh -c "./bin/rails db:migrate && bundle exec puma -C config/puma.rb"
 
   nginx:
     image: nginx:alpine
